@@ -1,6 +1,6 @@
 /* style2.css */
 * {
-    margin: 0; padding: 0;
+    margin: 0 auto; padding: 0;
     box-sizing: border-box;
   }
   
@@ -27,6 +27,7 @@
   
   }
 #main_header > h1{
+   width: 1200px;
     position: absolute;
     left: 0; top: 18px;
 }
@@ -53,8 +54,11 @@
   border-radius: 10px;
   background: #ccc;
 }
+
+/* 여기가 선영언니 시작부분 */
+
 .img {
-    background:url("/images/img.jpg");
+    background:url('../images/img.jpg');
     text-align: center;
     width: 1200px;
     height: 100px;
@@ -66,16 +70,17 @@
    text-align: center;
     color: white;
 }
+
 #notice{
    
     width: 600px;
     height:60px;
     text-align: center;
-    position: absolute;
-    margin-left:50%;
-    overflow: hidden;
+    /* position: absolute; */
+    /* margin-left:50%; */
+    /* overflow: hidden; */
     background: #42339c;
-    margin-left: 300px;
+    /* margin-left: 300px; */
 
 }
 
@@ -98,91 +103,117 @@
 }
 
 .aside > h1 {
+    width: 1200px;
     margin-top: 100px;
     margin-bottom:20px ;
     font-size: 20px;
     text-align: center;
     text-decoration: underline;
 }
+
 .div {
-   margin-left: 300px;
+  /* margin: 0 auto; */
+   /* margin-left: 300px; */
     overflow: hidden;
+    margin-bottom: 100px;
+}
+.th  {
+  width:200px ;
+  height:60px ;
+  text-align: center;
+  color:rgb(37, 37, 37);
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  border: 1px  solid  #666;
+  border-left: 0;
+  border-right: 0;
+  border-top: #cccccc;
 }
 td  {
-    width:300px ;
-    height:60px ;
-    text-align: left;
-    color:rgb(37, 37, 37);
-    font-size: 18px;
-    border: 1px  solid  #666;
-    
+  width:400px ;
+  height:60px ;
+  text-align: left;
+  /* border-left:  0px; */  
+  /* left: 50px; */
+  margin-left:50px;
+  color:rgb(37, 37, 37);
+  font-size: 18px;
+  border: 1px  solid  #666;
+  border-top: #cccccc;
+  border-right:#cccccc;
+  
 }    
+/* 선영언니 끝 */
 
+
+/* 푸터 */
 #main_footer {
-    /* width: 1200px; */
-    margin: 0 auto;
-    clear: both;
-    overflow: hidden;
-    /* outline: 1px solid pink; */
-  }
-  #footer_menu {
-    background: #fff;
-    border-bottom: 1px solid #999;
-    width: 100%;
-    margin: 0 auto;
-    height: 45px;
-    line-height: 45px;
-    position: relative;
-    /* overflow: hidden; */
-  }
-  #footer_menu > ul li{
-    display: inline-block;
-    /* position: absolute; */
-    /* outline: 1px solid green; */
-    color: #666;
-  }
-  #footer_menu > ul li a {
-    color: #666;
-  }
-  #footer_menu > .btn-top {
-    position: absolute;
-    float: right;
-    top: 0; right: 0;
+  /* width: 1200px; */
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+  /* outline: 1px solid pink; */
+}
+#footer_menu {
+  background: #ccc;
+  border-bottom: 1px solid #999;
+  width: 1200px;
+  margin: 0 auto;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  /* overflow: hidden; */
+}
+#footer_menu > ul li{
+  display: inline-block;
+  /* position: absolute; */
+  /* outline: 1px solid green; */
+  color: #fff;
+}
+#footer_menu > ul li a {
+  color: #fff;
+  padding: 10px;
+}
+#footer_menu > .btn-top {
+  position: absolute;
+  float: right;
+  top: 0; right: 0;
+
+}
+.btn-top{
+  background: #444;
+  color: #fff;
+  width: 64px; height: 45px; line-height: 45px;
+  font-size: 14px;
+  text-align: center;
   
-  }
-  .btn-top{
-    background: #444;
-    color: #fff;
-    width: 64px; height: 45px; line-height: 45px;
-    font-size: 14px;
-    text-align: center;
-    
-  }
-  .footer_info {
-    clear: both;
-    overflow: hidden;
-    height: 146px;
-    width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 15px;
-    color: #999;
-  }
-  .footer_info > img {
-    float: left;
-  }
-  .footer_info > address,p {
-    /* float: left; */
-    margin-top: 5px;
-    margin-bottom: 5px;
-    
-    
-    font-size: 16px;
-    /* outline: 2px solid blue; */
-  }
-  .footer_info > address > b {
-    padding-bottom: 5px;
-    color: #555555;
-    font-size: 18px;
+}
+.footer_info {
+  clear: both;
+  overflow: hidden;
+  height: 146px;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15px;
+  color: #999;
+}
+.footer_info > img {
+  float: left;
+}
+.footer_info > address,p {
+  /* float: left; */
+  margin-top: 5px;
+  margin-bottom: 5px;
   
-  }
+  
+  font-size: 16px;
+  /* outline: 2px solid blue; */
+}
+.footer_info > address > b {
+  padding-bottom: 5px;
+  color: #555555;
+  font-size: 18px;
+
+}
